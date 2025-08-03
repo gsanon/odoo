@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_partner_origin,access_partner_origin,custom_contact_fields.model_partner_origin,base.group_user,1,1,1,1
+access_partner_picture_link,access_partner_picture_link,custom_contact_fields.model_partner_picture_link,base.group_user,1,1,1,1
+access_partner_activity,access_partner_activity,custom_contact_fields.model_partner_activity,base.group_user,1,1,1,1

@@ -1,0 +1,236 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* custom_contact_fields
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#. module: custom_contact_fields
+#: model:ir.model,name:custom_contact_fields.model_partner_origin
+msgid "Partner Origin"
+msgstr "Origine du partenaire"
+
+#. module: custom_contact_fields
+#: model:ir.model,name:custom_contact_fields.model_res_partner
+msgid "Contact"
+msgstr "Contact"
+
+#. module: custom_contact_fields
+#: model:ir.model.fields,field_description:custom_contact_fields.field_partner_origin__name
+msgid "Origin"
+msgstr "Origine"
+
+#. module: custom_contact_fields
+#: model:ir.model.fields,field_description:custom_contact_fields.field_partner_origin__code
+msgid "Code"
+msgstr "Code"
+
+#. module: custom_contact_fields
+#: model:ir.model.fields,field_description:custom_contact_fields.field_partner_origin__description
+msgid "Description"
+msgstr "Description"
+
+#. module: custom_contact_fields
+#: model:ir.model.fields,field_description:custom_contact_fields.field_partner_origin__active
+msgid "Active"
+msgstr "Actif"
+
+#. module: custom_contact_fields
+#: model:ir.model.fields,field_description:custom_contact_fields.field_res_partner__x_origin
+msgid "Origin"
+msgstr "Origine"
+
+#. module: custom_contact_fields
+#: model:ir.model.fields,field_description:custom_contact_fields.field_res_partner__x_book_fr_id
+msgid "Book.fr ID"
+msgstr "Book.fr ID"
+
+#. module: custom_contact_fields
+#: model:ir.model,name:custom_contact_fields.model_partner_picture_link
+msgid "Partner Picture Link"
+msgstr "Lien photo du partenaire"
+
+#. module: custom_contact_fields
+#: model:ir.model.fields,field_description:custom_contact_fields.field_partner_picture_link__name
+msgid "Description"
+msgstr "Description"
+
+#. module: custom_contact_fields
+#: model:ir.model.fields,field_description:custom_contact_fields.field_partner_picture_link__url
+msgid "Picture URL"
+msgstr "URL de l'image"
+
+#. module: custom_contact_fields
+#: model:ir.model.fields,field_description:custom_contact_fields.field_partner_picture_link__sequence
+msgid "Sequence"
+msgstr "Séquence"
+
+#. module: custom_contact_fields
+#: model:ir.model.fields,field_description:custom_contact_fields.field_res_partner__x_model_pictures
+msgid "Model Pictures"
+msgstr "Photos de modèle"
+
+#. module: custom_contact_fields
+#: model:ir.actions.act_window,name:custom_contact_fields.action_origin_type
+#: model:ir.ui.menu,name:custom_contact_fields.menu_origin_type
+msgid "Origin Types"
+msgstr "Types d'origine"
+
+#. module: custom_contact_fields
+#: model:ir.model,name:custom_contact_fields.model_partner_activity
+msgid "Partner Activity"
+msgstr "Activité du partenaire"
+
+
+#. module: custom_contact_fields
+#: model:ir.model.fields,field_description:custom_contact_fields.field_partner_activity__name
+msgid "Activity"
+msgstr "Activité"
+
+#. module: custom_contact_fields
+#: model:ir.model.fields,field_description:custom_contact_fields.field_res_partner__x_activities
+msgid "Partner Activities"
+msgstr "Activités du partenaire"
+
+#. module: custom_contact_fields
+#: model:ir.model.fields,field_description:custom_contact_fields.field_res_partner__x_date_of_birth
+msgid "Date of Birth"
+msgstr "Date de naissance"
+
+#. module: custom_contact_fields
+#: model:ir.model.fields,field_description:custom_contact_fields.field_res_partner__x_gender
+msgid "Gender"
+msgstr "Genre"
+
+#. module: custom_contact_fields
+#: model:ir.model.fields,field_description:custom_contact_fields.field_res_partner__x_instagram
+msgid "Instagram"
+msgstr "Instagram"
+
+#. module: custom_contact_fields
+#: model:ir.model.fields,field_description:custom_contact_fields.field_res_partner__x_why_goldaia
+msgid "Why Goldaia?"
+msgstr "Pourquoi Goldaia ?"
+
+#. module: custom_contact_fields
+#: model:ir.model.fields,field_description:custom_contact_fields.field_res_partner__x_application_date
+msgid "Application Date"
+msgstr "Date de candidature"
+
+#. module: custom_contact_fields
+#: model:ir.model.fields,field_description:custom_contact_fields.field_res_partner__x_artistic_universe
+msgid "Artistic Universe"
+msgstr "Univers artistique"
+
+#. module: custom_contact_fields
+#: model:ir.model.fields,field_description:custom_contact_fields.field_res_partner__x_accept_contact
+msgid "Accept Contact"
+msgstr "Accepter le contact"
+
+#. module: custom_contact_fields
+#: model:ir.model.fields,field_description:custom_contact_fields.field_res_partner__x_accept_data_sharing
+msgid "Accept Data Sharing"
+msgstr "Accepter le partage de données"
+
+#. module: custom_contact_fields
+#: model:ir.model.fields,field_description:custom_contact_fields.field_res_partner__x_nationality
+msgid "Nationality"
+msgstr "Nationalité"
+
+#. module: custom_contact_fields
+#: model:ir.model.fields,field_description:custom_contact_fields.field_res_partner__x_height
+msgid "Height (cm)"
+msgstr "Taille (cm)"
+
+#. module: custom_contact_fields
+#: model:ir.model.fields,field_description:custom_contact_fields.field_res_partner__x_weight
+msgid "Weight (kg)"
+msgstr "Poids (kg)"
+
+#. module: custom_contact_fields
+#: model:ir.model.fields,field_description:custom_contact_fields.field_res_partner__x_top_size
+msgid "Top Size"
+msgstr "Taille haut"
+
+#. module: custom_contact_fields
+#: model:ir.model.fields,field_description:custom_contact_fields.field_res_partner__x_low_waist
+msgid "Low Waist"
+msgstr "Tour de taille"
+
+#. module: custom_contact_fields
+#: model:ir.model.fields,field_description:custom_contact_fields.field_res_partner__x_shoe_size
+msgid "Shoe Size"
+msgstr "Pointure"
+
+#. module: custom_contact_fields
+#: model:ir.model.fields,field_description:custom_contact_fields.field_res_partner__x_eyes_color
+msgid "Eyes Color"
+msgstr "Couleur des yeux"
+
+#. module: custom_contact_fields
+#: model:ir.model.fields,field_description:custom_contact_fields.field_res_partner__x_hair_color
+msgid "Hair Color"
+msgstr "Couleur des cheveux"
+
+#. module: custom_contact_fields
+#: model:ir.model.fields,field_description:custom_contact_fields.field_res_partner__x_personal_development_interest
+msgid "Personal Development Interest"
+msgstr "Intérêt pour le développement personnel"
+
+#. module: custom_contact_fields
+#: model:ir.model.fields,field_description:custom_contact_fields.field_res_partner__x_objectives
+msgid "Objectives"
+msgstr "Objectifs"
+
+#. module: custom_contact_fields
+#: model:ir.model.fields,field_description:custom_contact_fields.field_res_partner__x_issues
+msgid "Issues"
+msgstr "Problèmes"
+
+#. module: custom_contact_fields
+#: model:ir.model.fields,field_description:custom_contact_fields.field_res_partner__x_need_help
+msgid "Need Help"
+msgstr "Besoin d'aide"
+
+#. module: custom_contact_fields
+#: model:ir.actions.act_window,name:custom_contact_fields.action_activity
+#: model:ir.ui.menu,name:custom_contact_fields.menu_activity
+msgid "Activities"
+msgstr "Activités"
+
+#. module: custom_contact_fields
+#: model:ir.ui.view,arch_db:custom_contact_fields.view_partner_form_custom
+msgid "Model Details"
+msgstr "Détails du modèle"
+
+#. module: custom_contact_fields
+#: model:ir.ui.view,arch_db:custom_contact_fields.view_partner_form_custom
+msgid "Application Info"
+msgstr "Informations de candidature"
+
+#. module: custom_contact_fields
+#: model:ir.ui.view,arch_db:custom_contact_fields.view_partner_form_custom
+msgid "Consents"
+msgstr "Consentements"
+
+#. module: custom_contact_fields
+#: model:ir.ui.view,arch_db:custom_contact_fields.view_partner_form_custom
+msgid "Physical Details"
+msgstr "Détails physiques"
+
+#. module: custom_contact_fields
+#: model:ir.ui.view,arch_db:custom_contact_fields.view_partner_form_custom
+msgid "Clothing Sizes"
+msgstr "Tailles de vêtements"
+
+#. module: custom_contact_fields
+#: model:ir.ui.view,arch_db:custom_contact_fields.view_partner_form_custom
+msgid "Goals &amp; Issues"
+msgstr "Objectifs et problèmes"

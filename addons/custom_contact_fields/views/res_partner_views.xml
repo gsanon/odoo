@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Form view for partner -->
+    <record id="view_partner_form_custom" model="ir.ui.view">
+        <field name="name">res.partner.form.custom</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='category_id']" position="after">
+                <field name="x_origin" widget="many2many_tags"/>
+                <field name="x_book_fr_id"/>
+                <field name="x_activities" widget="many2many_tags"/>
+                <field name="x_date_of_birth"/>
+                <field name="x_gender"/>
+                <field name="x_instagram"/>
+                <field name="x_model_pictures" mode="kanban">
+                    <kanban>
+                        <field name="sequence"/>
+                        <field name="url"/>
+                        <field name="name"/>
+                        <templates>
+                            <t t-name="kanban-box">
+                                <div class="oe_kanban_global_click" style="margin: 5px; padding: 10px; border: 1px solid #ddd; border-radius: 5px; text-align: center; width: 200px;">
+                                    <div class="o_kanban_image" style="margin-bottom: 10px;">
+                                        <img t-att-src="record.url.raw_value" style="max-width: 150px; max-height: 150px; border-radius: 5px;" alt="Model Picture" referrerpolicy="no-referrer"/>
+                                    </div>
+                                    <div class="o_kanban_details">
+                                        <strong t-if="record.name.raw_value" t-esc="record.name.value"/>
+                                        <div style="font-size: 11px; color: #666; margin-top: 5px; word-break: break-all;">
+                                            <t t-esc="record.url.value"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </t>
+                        </templates>
+                    </kanban>
+                </field>
+            </xpath>
+            
+            <!-- Add Model Details as a tab in the existing notebook -->
+            <xpath expr="//notebook" position="inside">
+                <page string="Model Details" name="model_details">
+                    <group>
+                        <group string="Application Info">
+                            <field name="x_why_goldaia"/>
+                            <field name="x_application_date"/>
+                            <field name="x_artistic_universe"/>
+                            <field name="x_nationality"/>
+                        </group>
+                        <group string="Consents">
+                            <field name="x_accept_contact"/>
+                            <field name="x_accept_data_sharing"/>
+                            <field name="x_personal_development_interest"/>
+                            <field name="x_need_help"/>
+                        </group>
+                    </group>
+                    <group>
+                        <group string="Physical Details">
+                            <field name="x_height"/>
+                            <field name="x_weight"/>
+                            <field name="x_shoe_size"/>
+                            <field name="x_eyes_color"/>
+                            <field name="x_hair_color"/>
+                        </group>
+                        <group string="Clothing Sizes">
+                            <field name="x_top_size"/>
+                            <field name="x_low_waist"/>
+                        </group>
+                    </group>
+                    <group>
+                        <group string="Goals &amp; Issues">
+                            <field name="x_objectives"/>
+                            <field name="x_issues"/>
+                        </group>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+    
+    <!-- Origin Type form view -->
+    <record id="view_origin_type_form" model="ir.ui.view">
+        <field name="name">partner.origin.form</field>
+        <field name="model">partner.origin</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="code"/>
+                        <field name="description"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    
+    <!-- Origin Type tree view -->
+    <record id="view_origin_type_tree" model="ir.ui.view">
+        <field name="name">partner.origin.tree</field>
+        <field name="model">partner.origin</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="code"/>
+                <field name="active"/>
+            </list>
+        </field>
+    </record>
+    
+    <!-- Menu for managing origin types -->
+    <record id="action_origin_type" model="ir.actions.act_window">
+        <field name="name">Origin Types</field>
+        <field name="res_model">partner.origin</field>
+        <field name="view_mode">list,form</field>
+    </record>
+    
+    <menuitem id="menu_origin_type"
+              name="Origin Types"
+              parent="contacts.res_partner_menu_config"
+              action="action_origin_type"/>
+
+    <!-- Activity views -->
+    <record id="view_activity_form" model="ir.ui.view">
+        <field name="name">partner.activity.form</field>
+        <field name="model">partner.activity</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="description"/>
+                        <field name="active"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_activity_tree" model="ir.ui.view">
+        <field name="name">partner.activity.tree</field>
+        <field name="model">partner.activity</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="description"/>
+                <field name="active"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="action_activity" model="ir.actions.act_window">
+        <field name="name">Activities</field>
+        <field name="res_model">partner.activity</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <menuitem id="menu_activity"
+              name="Activities"
+              parent="contacts.res_partner_menu_config"
+              action="action_activity"/>
+</odoo>
