@@ -80,22 +80,20 @@
                     <group>
                         <group string="Image Previews" colspan="2">
                             <div class="row">
-                                <div class="col-md-6" t-if="record.x_applicant_image_1_url.value">
-                                    <label for="x_applicant_image_1_url">Applicant Image 1:</label>
-                                    <div style="text-align: center; margin: 10px;">
-                                        <img t-att-src="record.x_applicant_image_1_url.value" 
-                                             style="max-width: 200px; max-height: 200px; border: 1px solid #ddd; border-radius: 5px;" 
-                                             alt="Applicant Image 1" 
-                                             referrerpolicy="no-referrer"/>
+                                <div class="col-md-6">
+                                    <label for="x_applicant_image_1_url" invisible="not x_applicant_image_1_url">Applicant Image 1:</label>
+                                    <div style="text-align: center; margin: 10px;" invisible="not x_applicant_image_1_url">
+                                        <field name="x_applicant_image_1_url" widget="image" 
+                                               options="{'size': [200, 200]}" 
+                                               nolabel="1"/>
                                     </div>
                                 </div>
-                                <div class="col-md-6" t-if="record.x_applicant_image_2_url.value">
-                                    <label for="x_applicant_image_2_url">Applicant Image 2:</label>
-                                    <div style="text-align: center; margin: 10px;">
-                                        <img t-att-src="record.x_applicant_image_2_url.value" 
-                                             style="max-width: 200px; max-height: 200px; border: 1px solid #ddd; border-radius: 5px;" 
-                                             alt="Applicant Image 2" 
-                                             referrerpolicy="no-referrer"/>
+                                <div class="col-md-6">
+                                    <label for="x_applicant_image_2_url" invisible="not x_applicant_image_2_url">Applicant Image 2:</label>
+                                    <div style="text-align: center; margin: 10px;" invisible="not x_applicant_image_2_url">
+                                        <field name="x_applicant_image_2_url" widget="image" 
+                                               options="{'size': [200, 200]}" 
+                                               nolabel="1"/>
                                     </div>
                                 </div>
                             </div>
