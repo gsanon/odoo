@@ -49,6 +49,7 @@ class ResPartner(models.Model):
         string=_('Origin')
     )
     x_book_fr_id = fields.Integer(string=_('Book.fr ID'), help=_('ID from Book.fr system'))
+    x_external_id = fields.Char(string=_('External ID'), help=_('External system identifier'))
     x_model_pictures = fields.One2many('partner.picture.link', 'partner_id', string=_('Model Pictures'))
     
     # Basic partner fields

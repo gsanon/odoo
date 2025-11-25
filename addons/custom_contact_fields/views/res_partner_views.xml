@@ -9,6 +9,7 @@
             <xpath expr="//field[@name='category_id']" position="after">
                 <field name="x_origin" widget="many2many_tags"/>
                 <field name="x_book_fr_id"/>
+                <field name="x_external_id"/>
                 <field name="x_activities" widget="many2many_tags"/>
                 <field name="x_date_of_birth"/>
                 <field name="x_gender"/>
