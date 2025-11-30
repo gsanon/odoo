@@ -53,6 +53,7 @@
                             <field name="x_accept_data_sharing"/>
                             <field name="x_personal_development_interest"/>
                             <field name="x_need_help"/>
+                            <field name="x_interested_in_support"/>
                         </group>
                     </group>
                     <group>

@@ -99,7 +99,8 @@ class ResPartner(models.Model):
     x_objectives = fields.Text(_('Objectives'))
     x_issues = fields.Text(_('Issues'))
     x_need_help = fields.Boolean(_('Need Help'), default=False)
-    
+    x_interested_in_support = fields.Boolean(_('Interested in Support'), default=False)
+
     # Image URL fields for applicant uploads
     x_applicant_image_1_url = fields.Char(_('Applicant Image 1 URL'), help=_('URL link to first uploaded image from applicant'))
     x_applicant_image_2_url = fields.Char(_('Applicant Image 2 URL'), help=_('URL link to second uploaded image from applicant'))

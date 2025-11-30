@@ -200,6 +200,11 @@ msgid "Need Help"
 msgstr "Besoin d'aide"
 
 #. module: custom_contact_fields
+#: model:ir.model.fields,field_description:custom_contact_fields.field_res_partner__x_interested_in_support
+msgid "Interested in Support"
+msgstr "Veux être accompagné(e)"
+
+#. module: custom_contact_fields
 #: model:ir.actions.act_window,name:custom_contact_fields.action_activity
 #: model:ir.ui.menu,name:custom_contact_fields.menu_activity
 msgid "Activities"
