@@ -195,6 +195,11 @@ msgid "Issues"
 msgstr "Problèmes"
 
 #. module: custom_contact_fields
+#: model:ir.model.fields,field_description:custom_contact_fields.field_res_partner__x_model_expectations
+msgid "Model Expectations"
+msgstr "Attentes accompagnement"
+
+#. module: custom_contact_fields
 #: model:ir.model.fields,field_description:custom_contact_fields.field_res_partner__x_need_help
 msgid "Need Help"
 msgstr "Besoin d'aide"

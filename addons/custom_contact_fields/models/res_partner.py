@@ -98,6 +98,7 @@ class ResPartner(models.Model):
     x_personal_development_interest = fields.Boolean(_('Personal Development Interest'), default=False)
     x_objectives = fields.Text(_('Objectives'))
     x_issues = fields.Text(_('Issues'))
+    x_model_expectations = fields.Text(_('Model Expectations'))
     x_need_help = fields.Boolean(_('Need Help'), default=False)
     x_interested_in_support = fields.Boolean(_('Interested in Support'), default=False)
 

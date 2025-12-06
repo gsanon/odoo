@@ -73,6 +73,7 @@
                         <group string="Goals &amp; Issues">
                             <field name="x_objectives"/>
                             <field name="x_issues"/>
+                            <field name="x_model_expectations"/>
                         </group>
                         <group string="Applicant Images">
                             <field name="x_applicant_image_1_url" widget="url"/>
