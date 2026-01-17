@@ -1,0 +1,31 @@
+# © 2013-2016 Camptocamp SA
+# © 2013-2016 Akretion
+# License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html)
+
+{
+    "name": "Connector for E-Commerce",
+    "version": "18.0.1.0.0",
+    "category": "Hidden",
+    "author": "Camptocamp,Akretion,Odoo Community Association (OCA)",
+    "website": "https://github.com/OCA/connector-ecommerce",
+    "license": "AGPL-3",
+    "depends": [
+        "connector",
+        "sale_automatic_workflow",
+        "sale_exception",
+        "delivery",
+        "connector_base_product",
+        "account_payment_sale",  # Adds payment_mode_id to sale.order
+    ],
+    "data": [
+        "security/security.xml",
+        "security/ir.model.access.csv",
+        "wizard/sale_ignore_cancel_view.xml",
+        "data/ecommerce_data.xml",
+        "views/sale_view.xml",
+        "views/invoice_view.xml",
+        "views/stock_view.xml",
+        "views/payment_mode_view.xml",
+    ],
+    "installable": True,
+}
