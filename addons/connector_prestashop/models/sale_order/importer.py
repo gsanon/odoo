@@ -543,8 +543,10 @@ class SaleOrderImporter(Component):
 
     def _create(self, data):
         binding = super()._create(data)
+        # Odoo 18.0: _compute_tax_id() removed - taxes are auto-computed
+        # Just invalidate the recordset to ensure fresh values
         if binding.fiscal_position_id:
-            binding.odoo_id._compute_tax_id()
+            binding.odoo_id.invalidate_recordset()
         return binding
 
     def _after_import(self, binding):
